@@ -18,15 +18,18 @@
 
   <section class="main">
     <p>
-      Welcome to the quirky side of the internet where unicorns roam free and passwords are optional (just kidding, please don't forget them!). 
-      Join our merry band of digital misfits and let's embark on a journey filled with memes, cat gifs, and the occasional existential crisis.
+      Welcome to the quirky side of the internet where unicorns roam free and passwords <br>
+      are optional (just kidding, please <em>don't</em> forget them!). Join our merry band of <br>
+      digital misfits and let's embark on a journey filled with memes, cat gifs, <br>
+      and the occasional existential crisis.
     </p>
     <p>
-      Seriously, don't forget the passwords.
+      <br>
+      Seriously, <em>don't</em> forget the passwords.
     </p>
     <form action="#" method="post">
-      <h1>Proceed if you dare!</h1>
         <div class="inputs">
+          <h1 class="form-title">Proceed if you dare!</h1>
           <div class="row">
             <div class="group">
               <label for="first_name">FIRST NAME</label>
@@ -50,17 +53,19 @@
           <div class="row">
             <div class="group">
               <label for="pwd">PASSWORD</label>
-              <input type="text" name="pwd" id="pwd">
+              <input type="text" name="pwd" id="pwd" class="pwd">
+              <p class="pwd-note">* Passwords must match</p>
             </div>
             <div class="group">
               <label for="confirm_pwd">CONFIRM PASSWORD</label>
-              <input type="text" name="confirm_pwd" id="confirm_pwd">
+              <input type="text" name="confirm_pwd" id="confirm_pwd" class="pwd">
             </div>
           </div>
         </div>
         <input type="submit" value="Sign Up">
     </form>
-    <p>Already have an account? <a href="#">Log In</a></p>
+    <p class="account-prompt" >Already have an account? <a href="#">Log In</a></p>
   </section>
+  <script src="script.js"></script>
 </body>
 </html>
