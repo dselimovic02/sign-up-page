@@ -1,5 +1,6 @@
 const fields = document.querySelectorAll(".pwd");
 const note = document.querySelector(".pwd-note");
+const form = document.querySelector("form");
 
 fields.forEach(element => {
   element.addEventListener("keyup", () => {
@@ -17,3 +18,8 @@ fields.forEach(element => {
   });
 });
 
+form.addEventListener("submit", e => {
+  if (fields[0].value == fields[1].value) {
+    form.submit();
+  }
+});
